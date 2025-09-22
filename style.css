@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f9;
+  width: 320px;
+  padding: 0;
+}
+
+.popup-container {
+  padding: 15px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 18px;
+  margin: 0;
+  color: #2c3e50;
+}
+
+header p {
+  font-size: 12px;
+  color: #7f8c8d;
+  margin: 5px 0 0;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.feature-card span {
+  font-size: 14px;
+  color: #333;
+  flex: 1;
+  margin-left: 10px;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 22px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  border-radius: 22px;
+  transition: 0.3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input:checked + .slider {
+  background-color: #3498db;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* Buttons */
+.actions, .tts-controls, .summarize {
+  margin-top: 20px;
+  text-align: center;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#applyBtn {
+  background: #3498db;
+  color: white;
+}
+
+#applyBtn:hover {
+  background: #2980b9;
+}
+
+.secondary {
+  background: #ecf0f1;
+  color: #333;
+}
+
+.secondary:hover {
+  background: #d0d7de;
+}
+
+.tts-controls h3, .summarize h3 {
+  font-size: 14px;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}

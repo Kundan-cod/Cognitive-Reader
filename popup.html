@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cognitive Adaptive Reader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header>
+      <h1>🧠 Cognitive Reader</h1>
+      <p>Adaptive Reading Assistant</p>
+    </header>
+
+    <section class="features">
+      <div class="feature-card">
+        <label class="switch">
+          <input type="checkbox" id="dyslexiaFont">
+          <span class="slider"></span>
+        </label>
+        <span>Dyslexia-Friendly Font</span>
+      </div>
+
+      <div class="feature-card">
+        <label class="switch">
+          <input type="checkbox" id="focusMode">
+          <span class="slider"></span>
+        </label>
+        <span>Focus Mode (Highlight Line)</span>
+      </div>
+
+      <div class="feature-card">
+        <label class="switch">
+          <input type="checkbox" id="highContrast">
+          <span class="slider"></span>
+        </label>
+        <span>High Contrast Mode</span>
+      </div>
+    </section>
+
+    <section class="actions">
+      <button id="applyBtn">Apply Settings</button>
+      <button id="resetBtn" class="secondary">Reset</button>
+    </section>
+
+    <section class="tts-controls">
+      <h3>Text-to-Speech</h3>
+      <button id="playTTS">▶ Play</button>
+      <button id="pauseTTS">⏸ Pause</button>
+      <button id="resumeTTS">🔄 Resume</button>
+      <button id="stopTTS">⏹ Stop</button>
+    </section>
+
+    <section class="summarize">
+      <h3>Summarization</h3>
+      <button id="summarizeBtn">📖 Summarize Page</button>
+    </section>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
